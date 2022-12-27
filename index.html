@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Shift</title>
+    <!-- css link -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Style -->
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark py-3 px-4 shadow-5-strong justify-content-center">
+            <a href="/" class="navbar-brand mr-0"><img src="/Assets/img/logo.png" alt="logoTimeShift" class="logo"></a>
+            <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse justify-content-between align-items-center w-100"
+                id="collapsingNavbar2">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">A Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Fonctionnalités</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Intégrations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav flex-row justify-content-center flex-nowrap">
+                    <li class="nav-item"><a href="" class="btn btn-primary py-2 px-4 animated slideInDown">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <!-- background -->
+        <div class="container-fluid  timeshift-header py-5 mb-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <h2
+                            class="display-4 mb-3 animated slideInDown animate__animated animate__backInLeft animate__delay-6s">
+                            <span class="title">Solution de système de pointage du personnel basée sur le Cloud</span>
+                        </h2>
+                        <p class="animated slideInDown animate__animated animate__backInUp animate__delay-8s">TimeShif
+                            est une solution simple et accessible par le Web, pour suivre et contrôler les horaires de
+                            présence des salariés et le temps de travail sur plusieurs appareils.
+                            Le système est basé sur le protocole HTTP et le serveur pour communiquer avec les machines.
+                            Le contrôle d’accès s’appuie sur plusieurs techniques pour l’identification : biométrie,
+                            badge, PIN.</p>
+                        <!-- <a href=""
+                            class="btn btn-primary py-2 px-4 animated slideInDown animate__animated animate__backInLeft animate__delay-8s">savoir
+                            plus</a> -->
+                    </div>
+                    <div class="col-lg-6 col-md-3 animated fadeIn">
+                        <img class="img-fluid animated pulse infinite background animate__animated animate__backInRight animate__delay-8s"
+                            src="/Assets/img/images/BgPc.png" alt="background">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Services -->
+    <section class="fcton container ftco-section text-center">
+        <div class="section-title text-width"><span>Services</span>
+            <h2>Create Awesome Services</h2>
+            <div class="bar"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-xs-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="icon"><i class="uil uil-server-network-alt"></i></div>
+                        <h6 class="card-subtitle mb-2 text-muted">Facile à installer</h6>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="icon"><i class="uil uil-server-network-alt"></i></div>
+                        <h6 class="card-subtitle mb-2 text-muted">Possibilité de planifier et configurer sans limitation
+                        </h6>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="icon"><i class="uil uil-server-network-alt"></i></div>
+                        <h6 class="card-subtitle mb-2 text-muted">Paramétrage de vos équipes à votre convenance</h6>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="icon"><i class="uil uil-server-network-alt"></i></div>
+                        <h6 class="card-subtitle mb-2 text-muted">Centralisation et suivi à temps réel des présences
+                        </h6>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fonctionnalités -->
+    <section class="fonctionnalite ftco-section">
+        <div id="features" class="accordion-1">
+            <div class="container">
+                <div class="section-title text-width"><span class="text-light">Fonctionnalités</span>
+                    <h2>Fonctionnalités adaptées à votre activité</h2>
+                    <div class="bar"></div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-5">
+                        <div class="accordion" id="accordionExample">
+
+                            <div class="accordion-item">
+                                <div class="accordion-icon">
+                                    <span><img src="Assets/img/icon/icn (4).png" class="py-1"
+                                            style="width: 28px;height:38px;" alt=""></span>
+                                </div>
+                                <div class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Gestion des équipements
+                                    </button>
+                                </div>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">Mauris ornare libero et pharetra hendrerit. Cura
+                                        Où vous pouvez ajouter vos terminaux et les synchronisés avec les pointeuses
+                                        détectées par le service web.</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-icon">
+                                    <span><img src="Assets/img/icon/icn (1).png" class="py-1"
+                                            style="width: 28px;height:38px;" alt=""></span>
+                                </div>
+                                <div class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Gestion des accès
+                                    </button>
+                                </div>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">Pour mieux filtrer les entrées et les sorties, il est
+                                        nécessaire d’octroyer à certains de vos employés le droit d’accès
+                                        sur un ou plusieurs terminaux.</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-icon">
+                                    <span><img src="Assets/img/icon/icn (6).png" class="py-1"
+                                            style="width: 28px;height:38px;" alt=""></span>
+                                </div>
+                                <div class="accordion-header" id="headingThree">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Gestion des horaires de travail
+                                    </button>
+                                </div>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">Permet de piloter facilement la complexité des plannings
+                                        en fonction des besoins de main-d'œuvre de l’entreprise.</div>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion-item">
+                                <div class="accordion-icon">
+                                    <span><img src="Assets/img/icon/icn (8).png" class="py-1"
+                                            style="width: 28px;height:38px;" alt=""></span>
+                                </div>
+                                <div class="accordion-header" id="headingFour">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        Gestion du personnel
+                                    </button>
+                                </div>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">Rassemble l'ensemble des traitements liés aux employés
+                                        (Adresse, Etat civil, affectation des planning…) avec un
+                                        paramétrage souple et totalement personnalisable en synchronisant le tous dans
+                                        les équipements dédiés.</div>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion-item">
+                                <div class="accordion-icon">
+                                    <span><img src="Assets/img/icon/icn (3).png" class="py-1"
+                                            style="width: 28px;height:38px;" alt=""></span>
+                                </div>
+                                <div class="accordion-header" id="headingFive">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseFive">
+                                        Gestion des congés et absences
+                                    </button>
+                                </div>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">Pour simplifier le processus de demande de congés et de
+                                        validation d’une absence avec une recherche multicritère.</div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="accordion-item">
+                                <div class="accordion-icon">
+                                    <span><img src="Assets/img/icon/icn (2).png" class="py-1"
+                                            style="width: 28px;height:38px;" alt=""></span>
+                                </div>
+                                <div class="accordion-header" id="headingSix">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        Utilitaire
+                                    </button>
+                                </div>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">Mauris ornare libero et pharetra hendrerit. Cura
+                                        a pour but d’analyser, exploiter et gérer les entrées et sorties
+                                        <ul>
+                                            <li><b>Pointage : </b>permet de mettre à jour un pointage saisi et
+                                                synchroniser les pointages depuis les terminaux avec la
+                                                possibilité d’importer ou d’exporter selon le format choisi.
+                                            </li>
+                                            <li><b>Traitement : </b> Grace à cette interface vous pouvez lancer le
+                                                calcul du
+                                                temps de travail suivant une période donnée.</li>
+                                            <li><b>Corrections : </b> La solution apte à détecter les anomalies et les
+                                                faire
+                                                remonter pour traiter les pointages incorrects.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="accordion-item">
+                                <div class="accordion-icon">
+                                    <span><img src="Assets/img/icon/icn (5).png" class="py-1"
+                                            style="width: 28px;height:38px;" alt=""></span>
+                                </div>
+                                <div class="accordion-header" id="headingSeven">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSeven" aria-expanded="false"
+                                        aria-controls="collapseSeven">
+                                        Documents de reporting
+                                    </button>
+                                </div>
+                                <div id="collapseSeven" class="accordion-collapse collapse"
+                                    aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">Permettant une vue d’ensemble sur le traitement des
+                                        entrées et sorties des employés pour réaliser un diagnostic global
+                                        et évaluer la performance.
+                                        <br>
+                                        Tableau de bord : Visualiser l’état global des employés
+                                        <ul>
+                                            <li>Effectifs</li>
+                                            <li>Nombre des anomalies</li>
+                                            <li>Premier et dernier pointage</li>
+                                            <li>Partager un planning de congés disponible pour tous</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-icon">
+                                    <span><img src="Assets/img/icon/icn (7).png" class="py-1"
+                                            style="width: 28px;height:38px;" alt=""></span>
+                                </div>
+                                <div class="accordion-header" id="headingEight">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseEight" aria-expanded="false"
+                                        aria-controls="collapseEight">
+                                        Partie Administration
+                                    </button>
+                                </div>
+                                <div id="collapseEight" class="accordion-collapse collapse"
+                                    aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Gérer l'accès au application des utilisateurs</li>
+                                            <li>Gérer la validation des locataires</li>
+                                            <li>Visualiser tous les pointeuses détectées...</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div> <!-- end of accordion -->
+                    </div> <!-- end of col -->
+                    <div class="col-xl-7">
+                        <div class="image-container imgw">
+                            <img class="img-fluid imgFac" src="/Assets/img/images/01.png" alt=alternative>
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+            <div>
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                        <path id="gentle-wave"
+                            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    </defs>
+                    <g class="parallax">
+                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                    </g>
+                </svg>
+            </div>
+            <!--Waves end-->
+        </div> <!-- end of accordion-1 -->
+
+
+        </div>
+        <!-- end of features -->
+    </section>
+    <!-- Dash-P -->
+    <section class="dash ftco-section container">
+        <div class="section-title text-width"><span>TimeShift</span>
+            <h2>TimeShift, solution évolutive pour la gestion de temps de présence</h2>
+            <div class="bar"></div>
+        </div>
+        <div class="row">
+            <div class="row ftco-div justify-content-center align-items-center g-2">
+                <div class="col-6">
+                    <div class="image-container">
+                        <img src="Assets/img/img01.jpg" class="img-fluid imgDash">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="px-5 text-start">
+                        <h5 class="text-bold py-4">Suivez en temps réel la présence de vos employés</h5>
+                        <p>Visualisez et contrôlez facilement les pointages et les heures de travail. Avec TimeShift,
+                            vous pouvez même rectifier les anomalies détectées suite à un pointage incorrect.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row ftco-div justify-content-center align-items-center g-2">
+                <div class="col-6">
+                    <div class="px-5 text-start">
+                        <h5 class="text-bold py-4">Centralisez tous les pointages sur une seule plateforme</h5>
+                        <p>Avec TimeShift, vous pouvez centraliser tous vos appareils sur une seule plateforme et suivre
+                            à temps réel tous les pointages de vos employés,
+                            quelque soit leur emplacement et avec une simple configuration.</p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="image-container">
+                        <img src="Assets/img/img02.jpg" class="img-fluid imgDash">
+                    </div>
+                </div>
+            </div>
+            <div class="row ftco-div justify-content-center align-items-center g-2">
+                <div class="col-6">
+                    <div class="image-container">
+                        <img src="Assets/img/img03.jpg" class="img-fluid imgDash">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="px-5 text-start">
+                        <h5 class="text-bold py-4">Générez des rapports personnalisés</h5>
+                        <p>TimeShift vous permet de générer facilement des rapports sur le nombre d’affectif, le
+                            pointage,
+                            le solde des congés cumulés, les absences, les anomalies de pointages… Vous pouvez également
+                            exporter vos données facilement et en un simple clic.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Img Dashboard -->
+    <section class="fcton container ftco-section">
+        <div class="section-title text-width"><span>Dashboard</span>
+            <h2>Dashboard images</h2>
+            <div class="bar"></div>
+        </div>
+        <div class="container">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/Assets/img/images/01.png" alt="Dash-img"></div>
+                    <div class="swiper-slide"><img src="/Assets/img/images/02.png" alt="Dash-img"></div>
+                    <div class="swiper-slide"><img src="/Assets/img/images/03.png" alt="Dash-img"></div>
+                    <div class="swiper-slide"><img src="/Assets/img/images/04.png" alt="Dash-img"></div>
+                    <div class="swiper-slide"><img src="/Assets/img/images/05.png" alt="Dash-img"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- Pricing -->
+    <section class="Pricing ftco-section container">
+        <div class="section-title text-width"><span>Price</span>
+            <h2>Choisissez le forfait TimeShift selon votre besoin en entreprise
+            </h2>
+            <div class="bar"></div>
+        </div>
+        <div class="planContainer">
+            <div class="plan">
+                <div class="titleContainer">
+                    <div class="price">
+                        <p>0 </p><span>/an</span>
+                    </div>
+                </div>
+                <div class="infoContainer">
+                    <div class="p desc"><em>Jusqu'à 3 employés</em></div>
+                    <ul class="features">
+                        <li><strong>1-3</strong> employés</li>
+                    </ul><a class="selectPlan">Select Plan</a>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="titleContainer">
+                    <div class="price">
+                        <p>1200</p><span>/an</span>
+                    </div>
+                </div>
+                <div class="infoContainer">
+                    <div class="p desc"><em>Jusqu'à 10 employés</em></div>
+                    <ul class="features">
+                        <li><strong>10</strong> employés</li>
+                    </ul><a class="selectPlan">Select Plan</a>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="titleContainer">
+                    <div class="price">
+                        <p>2900 </p><span>/an</span>
+                    </div>
+                </div>
+                <div class="infoContainer">
+                    <div class="p desc"><em>Jusqu'à 50 employés</em></div>
+                    <ul class="features">
+                        <li><strong>50</strong> employés</li>
+                    </ul><a class="selectPlan">Select Plan</a>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="titleContainer">
+                    <div class="price">
+                        <p>4900</p><span>/an</span>
+                    </div>
+                </div>
+                <div class="infoContainer">
+                    <div class="p desc"><em>Jusqu'à 100 employés</em></div>
+                    <ul class="features">
+                        <li><strong>100</strong> employés</li>
+                    </ul><a class="selectPlan">Select Plan</a>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="titleContainer">
+                    <div class="price">
+                        <p>Sur devis</p>
+                    </div>
+                </div>
+                <div class="infoContainer">
+                    <div class="p desc"><em>Jusqu'à +100 employés</em></div>
+                    <ul class="features">
+                        <li><strong>+100</strong> employés</li>
+                    </ul><a class="selectPlan">Select Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ -->
+    <section class="besoin ftco-section container">
+        <div class="section-title text-width"><span>TimeShif</span>
+            <h2>Besoin d’aide pour choisir un plan?
+            </h2>
+            <div class="bar"></div>
+        </div>
+        <div class="row justify-content-center align-items-center g-2">
+            <div class="card col-6">
+                <div class="card-body">
+                    <img src="Assets/img/icon/envelope-solid.svg" class="iconBesoin" height="128px" width="128px" />
+                    <p class="py-5">Demander plus d’informations sur nos services</p>
+                    <button type="button" class="btn btn-primary">Envoyer une demande</button>
+                </div>
+            </div>
+            <div class="card col-6">
+                <div class="card-body">
+                    <img src="Assets/img/icon/messages.svg" class="iconBesoin" height="128px" width="128px" />
+                    <p class="py-5">Commencez une conversation avec notre équipe</p>
+                    <button type="button" class="btn btn-primary">Envoyer une demande</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer-area footer--light">
+        <div class="footer-big">
+            <!-- start .container -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="footer-widget">
+                            <div class="widget-about">
+                                <img src="/Assets/img/logo.png" alt="" class="img-fluid logo">
+                                <p>Solution de paie en ligne pour vous libérer des tâches administratives répétitives.
+                                    C’est une plate-forme cloud avec une
+                                    architecture multi-tenant, qui permet de traiter rapidement et efficacement votre
+                                    paie en toute conformité.</p>
+                                <ul class="contact-details">
+
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Ends: .footer-widget -->
+                    </div>
+                    <!-- end /.col-md-4 -->
+                    <div class="col-md-3 col-sm-4">
+                        <div class="footer-widget">
+                            <div class="footer-menu footer-menu--1">
+                                <h4 class="footer-widget-title">Liens utils</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#">Tarifs</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Faqs</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Politique de confidentialité</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end /.footer-menu -->
+                        </div>
+                        <!-- Ends: .footer-widget -->
+                    </div>
+                    <!-- end /.col-md-3 -->
+                    <!-- end /.col-lg-3 -->
+
+                    <div class="col-md-3 col-sm-4">
+                        <div class="footer-widget">
+                            <div class="footer-menu no-padding">
+                                <h4 class="footer-widget-title">Contactez-nous</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#">76 Avenue des pléiades ( HAY RAJAA) Quartier des Hopitaux –
+                                            Casablanca</a>
+                                    <li>
+                                        <span class="icon-earphones"></span> Call Us:
+                                        <a href="tel:344-755-111">344-755-111</a>
+                                    </li>
+                                    <li>
+                                        <span class="icon-envelope-open"></span>
+                                        <a href="mailto:support@aazztech.com">support@timeshift.com</a>
+                                    </li>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end /.footer-menu -->
+                        </div>
+                        <!-- Ends: .footer-widget -->
+                    </div>
+                    <!-- Ends: .col-lg-3 -->
+
+                </div>
+                <!-- end /.row -->
+            </div>
+            <!-- end /.container -->
+        </div>
+        <!-- end /.footer-big -->
+
+        <div class="mini-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="copyright-text">
+                            <p>© 2022
+                                . All rights reserved. Created by
+                                <a href="#">timeshift</a>
+                            </p>
+                        </div>
+
+                        <div class="go_top">
+                            <span class="icon-arrow-up"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- js link -->
+    <script   src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <!-- main -->
+    <script src="/assets/main.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
