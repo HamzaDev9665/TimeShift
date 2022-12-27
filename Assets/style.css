@@ -85,6 +85,7 @@ header {
         padding: 6em 0;
     }
 }
+
 /* div padding */
 .ftco-div {
     padding: 3em 0;
@@ -186,27 +187,44 @@ header {
     padding-top: 8rem !important;
     padding-bottom: 3rem !important;
 }
+
 /* Dash */
-.imgDash{
+.imgDash {
     border-radius: 10px;
 }
+
 /* Dashboardimg */
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
     color: var(--primary) !important;
 }
+
 .swiper-pagination-bullet-active {
     background: var(--primary) !important;
 }
+
 /* pricing */
 .planContainer {
     display: flex;
-
     margin: 1em;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
 }
+
+@media only screen and (max-width: 986px) {
+    .planContainer {
+        display: flex;
+        margin: 1em;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
 .plan {
     background: white;
     width: 20em;
@@ -216,16 +234,19 @@ header {
     margin-bottom: 1em;
     box-shadow: 0 0 1.25rem rgba(108, 118, 134, .1);
 }
+
 .plan .titleContainer {
     background-color: var(--primary);
     padding: 1.4em;
 }
+
 .plan .titleContainer .titlePrice {
     font-size: 1.7em;
     text-transform: uppercase;
     color: white;
     font-weight: 700;
 }
+
 .plan .titleContainer .price {
     font-size: 1.45em;
     padding-top: 1em;
@@ -236,42 +257,50 @@ header {
     display: inline-block;
     width: 80%;
 }
+
 .plan .titleContainer .price p {
     font-size: 1.45em;
     display: inline-block;
     margin: 0;
 }
+
 .plan .titleContainer .price span {
     font-size: 1.0875em;
     display: inline-block;
 }
+
 .plan .infoContainer {
     padding: 1em;
     color: #2d3b48;
     box-sizing: border-box;
 }
+
 .plan .infoContainer .desc {
     padding: 1em 0;
     border-bottom: 2px solid #efefef;
     margin: 0 auto;
     width: 90%;
 }
+
 .plan .infoContainer .desc em {
     font-size: 1em;
     font-weight: 500;
 }
+
 .plan .infoContainer .features {
     font-size: 1em;
     list-style: none;
     padding-left: 0;
 }
+
 .plan .infoContainer .features li {
     padding: 0.5em;
 }
+
 .plan .infoContainer .selectPlan {
     border: 2px solid var(--primary);
     text-decoration: none;
-    color:var(--primary);
+    color: var(--primary);
     padding: 0.75em 1em;
     border-radius: 2.5em;
     cursor: pointer;
@@ -282,27 +311,33 @@ header {
     display: block;
     font-weight: 700;
 }
+
 .plan .infoContainer .selectPlan:hover {
     background-color: var(--primary);
     color: white;
 }
+
 @media screen and (max-width: 25em) {
     .planContainer {
         margin: 0;
-   }
+    }
+
     .planContainer .plan {
         width: 100%;
         margin: 1em 0;
-   }
+    }
 }
+
 /* besoin */
-.iconBesoin{
+.iconBesoin {
     color: var(--primary);
 }
-.besoin .row .card{
+
+.besoin .row .card {
     width: 334px;
-height: 477px;
+    height: 477px;
 }
+
 /********************/
 /*     Features     */
 /********************/
