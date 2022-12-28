@@ -99,6 +99,14 @@ header {
     header {
         height: 920px;
     }
+    .title{
+        font-family: 'roboto', 'sans-serif';
+        font-size: 22px !important;
+        font-weight: 700;
+    }
+    .DescriptionTimeShift{
+        font-size: 12px;
+    }
 }
 
 /* div padding */
