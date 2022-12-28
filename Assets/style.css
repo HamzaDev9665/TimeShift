@@ -101,7 +101,7 @@ header {
 
 /* TimeShift */
 .title {
-    font-family: 'Outfit';
+    font-family: 'Outfit', 'sans-serif';
     font-style: normal;
     font-weight: 700;
     font-size: 38px;
@@ -109,9 +109,13 @@ header {
     display: flex;
     align-items: center;
     text-transform: capitalize;
-
     color: #0B0C0C;
 
+}
+
+.DescriptionTimeShift {
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .section-title.text-width {
@@ -146,11 +150,12 @@ header {
     margin: auto;
 }
 
-.card {
+.card-service {
     background-color: #fff;
     box-shadow: 0 0 1.25rem rgba(108, 118, 134, .1);
     padding: 35px 20px;
     position: relative;
+    height: 320px;
     z-index: 1;
     transition: .5s;
     border-radius: 5px;
@@ -159,19 +164,19 @@ header {
     border: none !important;
 }
 
-.card .icon {
-    margin-bottom: 48px;
+.card-service .icon {
+    margin-bottom: 60px;
 }
 
-.card .icon i {
-    font-size: 30px;
+.card-service .icon i {
+    font-size: 64px;
     color: var(--primary);
     transition: .5s;
     line-height: 1;
     display: inline-block;
-    height: 70px;
-    width: 70px;
-    line-height: 70px;
+    height: 90px;
+    width: 90px;
+    line-height: 90px;
     border-radius: 50px;
     background-color: #f6f6f6;
 }
@@ -192,6 +197,13 @@ header {
 /* Dash */
 .imgDash {
     border-radius: 10px;
+}
+
+.titleDashTimeShift {
+    font-family: 'Outfit', 'sans-serif';
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--primary);
 }
 
 /* Dashboardimg */
@@ -607,7 +619,7 @@ footer p {
 }
 
 footer h4 {
-    font-family: Rubik, sans-serif;
+    font-family: 'Rubik', 'sans-serif';
     margin: 0;
     font-weight: 400;
     padding: 0;
