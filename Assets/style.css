@@ -272,11 +272,20 @@ header {
         width: 100%;
         height: 15vh;
         margin-bottom: -299px !important;
-        /*Fix for safari gap*/
         min-height: 100px;
         max-height: 150px;
     }
 
+}
+@media (max-width:1366px) {
+    .waves {
+        position: relative;
+        width: 100%;
+        height: 15vh;
+        margin-bottom: -235px !important;
+        min-height: 100px;
+        max-height: 150px;
+    }
 }
 
 .imgFac {
