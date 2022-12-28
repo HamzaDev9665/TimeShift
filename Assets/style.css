@@ -40,17 +40,7 @@ h6,
     border-color: var(--light) !important;
 }
 
-header {
-    height: 652px;
-    width: 100%;
-    left: 0%;
-    right: 0%;
-    top: 0px;
-    background: linear-gradient(180deg, rgba(178, 169, 206, 0.33) 0%, rgba(178, 169, 206, 0) 100%);
-}
-
 .logo {
-
     width: 54px;
     height: 66px;
 }
@@ -75,6 +65,16 @@ header {
     padding-right: 120px;
 }
 
+@media (max-width: 767.98px) {
+    .navbar-brand {
+        padding-left: 0;
+    }
+
+    .navbar-nav {
+        padding-right: 0;
+    }
+}
+
 /* section padding */
 .ftco-section {
     padding: 7em 0;
@@ -84,6 +84,20 @@ header {
 @media (max-width: 767.98px) {
     .ftco-section {
         padding: 6em 0;
+    }
+}
+
+header {
+    height: 750px;
+    width: 100%;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+    background: linear-gradient(180deg, rgba(178, 169, 206, 0.33) 0%, rgba(178, 169, 206, 0) 100%);
+}
+@media (max-width: 767.98px) {
+    header {
+        height: 920px;
     }
 }
 
@@ -148,6 +162,13 @@ header {
     border-radius: 5px;
     overflow: hidden;
     margin: auto;
+}
+
+/* service */
+@media (max-width: 767.98px) {
+    .service {
+        padding-top: 900px;
+    }
 }
 
 .card-service {
