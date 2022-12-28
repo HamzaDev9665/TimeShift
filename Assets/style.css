@@ -71,7 +71,16 @@ h6,
     }
 
     .navbar-nav {
+        position: absolute;
+        left: 150px;
+        border-radius: 12px;
+        box-shadow: 0 0 1.25rem rgba(108, 118, 134, .1);
+        width: 200px;
         padding-right: 0;
+        padding: 10px;
+        z-index: 1 !important;
+        background-color: #ebe8f2;
+        
     }
 }
 
@@ -95,19 +104,23 @@ header {
     top: 0px;
     background: linear-gradient(180deg, rgba(178, 169, 206, 0.33) 0%, rgba(178, 169, 206, 0) 100%);
 }
+
 @media (max-width: 767.98px) {
     header {
         height: 750px;
     }
-    .title{
+
+    .title {
         font-size: 22px !important;
         font-weight: 700;
         line-height: 30px !important;
     }
-    .DescriptionTimeShift{
+
+    .DescriptionTimeShift {
         font-size: 12px;
     }
 }
+
 
 /* div padding */
 .ftco-div {
@@ -188,11 +201,11 @@ header {
         margin-bottom: 30px;
         border: none !important;
     }
-    
+
     .card-service .icon {
         margin-bottom: 60px;
     }
-    
+
     .card-service .icon i {
         font-size: 64px;
         color: var(--primary);
@@ -244,14 +257,16 @@ header {
         visibility: hidden;
 
     }
-    
+
     .imgw {
         visibility: hidden;
     }
-    .accordion-1{
+
+    .accordion-1 {
         padding-top: 9.25rem;
         padding-bottom: -15px !important;
     }
+
     .waves {
         position: relative;
         width: 100%;
@@ -263,6 +278,7 @@ header {
     }
 
 }
+
 .imgFac {
     filter: drop-shadow(-18px 20px 18px rgba(0, 0, 0, 0.1));
     border-radius: 12px;
