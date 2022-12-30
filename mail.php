@@ -1,16 +1,28 @@
-<?php
-  if(isset( $_POST['name']))
-  $name = $_POST['name'];
-  if(isset( $_POST['email']))
-  $email = $_POST['email'];
-  if(isset( $_POST['message']))
-  $message = $_POST['message'];
-  if(isset( $_POST['tel']))
-  $tel = $_POST['tel'];
+<?php 
 
-  $content="From: $name \n Email: $email \n Message: $message";
-  $recipient = "info@delfisoft.ma";
-  $mailheader = "From: $email \r\n";
-  mail($recipient, $subject, $content, $mailheader) or die("Error!");
-  echo "Email sent!";
+if(isset($_POST['send']))
+{
+   $name = $_POST['name'];
+   $email = $_POST['email'];
+   $tel = $_POST['tel'];
+   $message = $_POST['message'];
+
+   if(empty($name) || empty($email) || empty($tel) || empty($message))
+   {
+       header('location:index.php?error');
+   }
+   else
+   {
+       $to = "hamzadyna541@gmail.com";
+
+       if(mail($to,$name,$message,$email))
+       {
+           header("location:index.php?success");
+       }
+   }
+}
+else
+{
+    header("location:index.php");
+}
 ?>
