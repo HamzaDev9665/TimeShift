@@ -124,9 +124,9 @@
                             <div class="row">
                                 <div class="col-lg-10 offset-lg-1">
                                     <div class="contact_form_container">
-                                        <div class="contact_form_title">Entrer en contact</div>
+                                        <div class="contact_form_title">Contact</div>
 
-                                        <form action="mail.php" method="post">
+                                        <form name="contact-form" action="mail.php" method="post" id="contact-form">
                                             <div
                                                 class="contact_form_inputs d-flex flex-md-row flex-column justify-content-between align-items-between">
                                                 <input type="text" id="name" name="name"
@@ -146,8 +146,7 @@
                                                     data-error="Please, write us a message."></textarea>
                                             </div>
                                             <div class="contact_form_button pt-4">
-                                                <input type="submit" class="button btn btn-primary" value="Submit">
-                                                <!-- <button class="button btn btn-primary" name="send">Send Message</button> -->
+                                                <button class="button btn btn-primary" name="send">Send Message</button>
                                             </div>
                                         </form>
 
