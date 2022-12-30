@@ -1,28 +1,15 @@
-<?php 
+<?php
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $tel = $_POST['tel'];
+    $message = $_POST['message'];
+    $to = "hamzaloza@mailna.co";
 
-if(isset($_POST['send']))
-{
-   $name = $_POST['name'];
-   $email = $_POST['email'];
-   $tel = $_POST['tel'];
-   $message = $_POST['message'];
+    $headers = "From: ".$name."\r\n"."CC:hamzaloza@mailna.co";
+    $txt ="You have reciverd an e-mail from".$name."\r\n"."Email: ".$email."Message: ".$message;
 
-   if(empty($name) || empty($email) || empty($tel) || empty($message))
-   {
-       header('location:index.php?error');
-   }
-   else
-   {
-       $to = "hamzadyna541@gmail.com";
+    if($email != NULL){
+        mail($to,$name,$message,$email);
+    }
 
-       if(mail($to,$name,$message,$email))
-       {
-           header("location:index.php?success");
-       }
-   }
-}
-else
-{
-    header("location:index.php");
-}
 ?>
