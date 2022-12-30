@@ -1,4 +1,36 @@
 <?php 
+use PHPMailer\PHPMailer\PHPMailer;
+require_once 'phpmailer/Exception.php';
+require_once 'phpmailer/PHPMailer.php';
+require_once 'phpmailer/SMTP.php';
+
+
+function   outlooksmtp($emailR,$subject,$Body){
+    $mail = new PHPMailer(true);
+  try{
+    $mail->isSMTP();
+    $mail->Host = 'smtp.office365.com';
+    $mail->SMTPAuth = true;
+    $mail->Username = "hamza998Z@outlook.com"; // Gmail address which you want to use as SMTP server
+    $mail->Password = 'Mouad.00'; // Gmail address Password
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->Port = '587' ;
+    $mail->setFrom('hamza998Z@outlook.com'); // Gmail address which you used as SMTP server
+    $mail->addAddress($emailR); // Email address where you want to receive emails (you can use any of your gmail address including the gmail address which you used as SMTP server)
+    $mail->isHTML(true);
+    $mail->Subject = $subject;
+    $mail->Body = $Body;
+
+    $mail->send();
+    return "done";
+  } catch (Exception $e){
+    return "error";
+  }
+
+}
+
+
+
 
 if(isset($_POST['send']))
 {
@@ -13,16 +45,21 @@ if(isset($_POST['send']))
    }
    else
    {
-       $to = "hamzadyna541@gmail.com";
+       $to = "hamza998Z@outlook.com";
 
-       if(mail($to,$name,$message,$email))
+       if(outlooksmtp($email,$name,$message) =="done" )
        {
-           header("location:index.php?success");
+           header("location:contact.html");
+       }
+       else {
+       header('location:contact.html');
        }
    }
 }
 else
 {
-    header("location:index.php");
+         header("location:contact.html");
 }
 ?>
+
+
